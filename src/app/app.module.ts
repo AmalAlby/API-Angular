@@ -11,7 +11,8 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { UserdataComponent } from './userdata/userdata.component';
 import { TodoComponent } from './todo/todo.component';
 import { QuotesComponent } from './quotes/quotes.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component'
 
 
 const myroute:Routes=[
@@ -57,7 +58,8 @@ const myroute:Routes=[
     ProductlistComponent,
     UserdataComponent,
     TodoComponent,
-    QuotesComponent
+    QuotesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
