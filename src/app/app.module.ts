@@ -8,6 +8,7 @@ import { PassengerdataComponent } from './passengerdata/passengerdata.component'
 import { UsdataComponent } from './usdata/usdata.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductlistComponent } from './productlist/productlist.component';
+import { UserdataComponent } from './userdata/userdata.component';
 
 
 const myroute:Routes=[
@@ -27,6 +28,10 @@ const myroute:Routes=[
     {
       path:"plist",
       component:ProductlistComponent
+    },
+    {
+      path:"udata",
+      component:UserdataComponent
     }
 
 ]
@@ -38,7 +43,8 @@ const myroute:Routes=[
     PassengerdataComponent,
     UsdataComponent,
     UserinfoComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    UserdataComponent
   ],
   imports: [
     BrowserModule,
