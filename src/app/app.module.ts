@@ -10,6 +10,8 @@ import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { UserdataComponent } from './userdata/userdata.component';
 import { TodoComponent } from './todo/todo.component';
+import { QuotesComponent } from './quotes/quotes.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 const myroute:Routes=[
@@ -37,6 +39,10 @@ const myroute:Routes=[
     {
       path:"todo",
       component:TodoComponent
+    },
+    {
+      path:"quotes",
+      component:QuotesComponent
     }
 
 ]
@@ -50,12 +56,14 @@ const myroute:Routes=[
     UserinfoComponent,
     ProductlistComponent,
     UserdataComponent,
-    TodoComponent
+    TodoComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
