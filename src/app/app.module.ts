@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengerdataComponent } from './passengerdata/passengerdata.component';
 import { UsdataComponent } from './usdata/usdata.component';
+import { UserinfoComponent } from './userinfo/userinfo.component';
 
 
 const myroute:Routes=[
@@ -17,6 +18,10 @@ const myroute:Routes=[
     {
       path:"us",
       component:UsdataComponent
+    },
+    {
+      path:"info",
+      component:UserinfoComponent
     }
 
 ]
@@ -26,7 +31,8 @@ const myroute:Routes=[
   declarations: [
     AppComponent,
     PassengerdataComponent,
-    UsdataComponent
+    UsdataComponent,
+    UserinfoComponent
   ],
   imports: [
     BrowserModule,
