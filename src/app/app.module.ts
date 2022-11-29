@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengerdataComponent } from './passengerdata/passengerdata.component';
+import { UsdataComponent } from './usdata/usdata.component';
 
 
 const myroute:Routes=[
@@ -12,6 +13,10 @@ const myroute:Routes=[
     {
       path:"",
       component:PassengerdataComponent
+    },
+    {
+      path:"us",
+      component:UsdataComponent
     }
 
 ]
@@ -20,7 +25,8 @@ const myroute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    PassengerdataComponent
+    PassengerdataComponent,
+    UsdataComponent
   ],
   imports: [
     BrowserModule,
