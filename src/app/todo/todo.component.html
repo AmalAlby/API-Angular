@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">USERID</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">TITLE</th>
+                    <th scope="col">COMPLETED STATUS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data.todos">
+                    <th scope="row">{{i.userId}}</th>
+                    <td>{{i.id}}</td>
+                    <td>{{i.todo}}</td>
+                    <td>{{i.completed}}</td>
+                  </tr>
+                </tbody>
+              </table>            
+        </div>
+    </div>
+</div>
